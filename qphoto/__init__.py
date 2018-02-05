@@ -11,7 +11,7 @@ Licensed to MIT
 
 import json
 import traceback
-import urllib2
+import urllib
 import os
 import random
 import re

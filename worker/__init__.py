@@ -9,7 +9,7 @@ Licensed to MIT
 
 import time
 import traceback
-import Queue
+import queue as Queue
 import threading
 import common
 

@@ -9,7 +9,7 @@ Licensed to MIT
 
 import os
 import json
-import Queue
+import queue as Queue
 import qphoto
 from worker import Worker
 import common
@@ -22,7 +22,7 @@ confileFileName = 'config.json'
 env = os.environ.get('ENV')
 if env == "DEV":
     confileFileName = 'config.dev.json'
-configFile = file(confileFileName)
+configFile = open(confileFileName)
 config = json.load(configFile)
 configFile.close()
 logger.info(u'读取配置文件完成')
